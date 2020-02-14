@@ -7,7 +7,8 @@ Geometry simulation:
 
 Neighbor counting:
 
-* :py:func:`nearest_neighbors`: Calculate the nth closest point to a given set of points
+* :py:func:`nearest_neighbors`: Calculate the distance to the nth closest point to
+    a given set of points
 * :py:func:`count_neighbors`: Calculte the number of points within a radial neighborhood
 
 Point manipulation tools:

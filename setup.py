@@ -44,6 +44,7 @@ setuptools.setup(
     author=about['__author__'],
     author_email=about['__author_email__'],
     cmdclass={'build_ext': build_ext},
+    packages=('cm_microtissue_struct', ),
     ext_modules=ext_modules,
     scripts=scripts,
 )

@@ -58,7 +58,7 @@ cd scripts
 ./simulate_3d_aggregate_mixing.py
 ```
 
-The examples below assume the scripts are being run with this method.
+The examples below assume the scripts are being run with the in-place install method.
 
 ## Simulating aggregate distributions
 
@@ -74,7 +74,7 @@ the paper:
     --neighbor-radius 20 \
     --same-cell-radius 5 \
     --num-batches 16 \
-    ./data/sim_uniform_pos
+    ../data/sim_uniform_pos
 ```
 
 Which will generate a set of position tables at `./data/sim_uniform_pos` corresponding
@@ -139,8 +139,8 @@ To compare the example empirical data to the example simulated data, first run
 
 ```{bash}
 ./stats_3d_aggregate_mixing.py \
-      ./data/empirical_pos \
-      ./data/sim_uniform_pos
+      ../data/empirical_pos \
+      ../data/sim_uniform_pos
 ```
 
 This command generates the final distributions in **Figure 2**
@@ -162,13 +162,6 @@ documentation.
 
 ## Testing
 
-The modules defined in `cm_microtissue_struct` have a test suite that can be run
-using the `pytest` package.
-
-```{bash}
-python3 -m pytest tests
-```
-
 It is required to first build all extensions using
 
 ```{bash}
@@ -176,6 +169,15 @@ python3 setup.py build_ext --inplace
 ```
 
 before running the test suite.
+
+The modules defined in `cm_microtissue_struct` have a test suite that can be run
+using the `pytest` package.
+
+```{bash}
+python3 -m pytest tests
+```
+
+All tests should pass.
 
 ## Documentation
 
