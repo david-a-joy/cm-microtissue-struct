@@ -190,3 +190,31 @@ make html
 ```
 
 Documentation will then be available under `docs/_build/html/index.html`
+
+## MATLAB Analysis Code
+
+Analysis code used to generate Figure 1, Figure 3, Figure 4 and several supplemental
+figures are provided in the `matlab` folder. These scripts have been tested on
+Windows 7, but may work on other operating systems with slight modification.
+Instructions for acquiring the input data for each script are provided in the
+script comments.
+
+### Cell Counting and Volumetric Rendering
+
+The `total_cells_script.m` produces the volume rendering and cell count plots from
+*Figure 1*
+
+### Calcium Imaging Analysis
+
+The `calcium_imaging_analysis.m` script takes raw calcium imaging data and generates
+the heatmaps and traces found in *Figure 4*
+
+### XYZ Slice Analysis
+
+The `xyz_slice_code.m` script takes raw GCaMP slice data and generates
+*Supplementary Movie 1*
+
+### GCAMP Slice Analysis
+
+The `gcamp_slice_code.m` script performs calcium analysis on GCaMP imaging data
+to generate *Supplementary Movie 3*
